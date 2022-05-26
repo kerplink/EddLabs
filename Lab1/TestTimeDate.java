@@ -5,6 +5,7 @@ public class TestTimeDate {
     }
     public static void main(String[]args) {
         TimeDate td = new TimeDate();
+        //opc es la opcion que será ingresada por teclado
         String opc = "a";
         Scanner sc = new Scanner(System.in);
         System.out.println("1.Cambiar dia"+"\n"+"2.Cambiar mes"+"\n"+"3.Cambiar año"+"\n"+"4.Cambiar hora"+"\n"+
@@ -12,6 +13,7 @@ public class TestTimeDate {
         while(!opc.equals("7")) {
             System.out.println("Seleccione operación (El numero asociado):");
             opc = sc.next();
+            //Un pequeño failsafe
             while(!tryCode(opc)) {
                 System.out.println("Opción inválida, intente nuevamente.");
                 opc = sc.next();
