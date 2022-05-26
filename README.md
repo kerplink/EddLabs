@@ -1,2 +1,2 @@
 # EddLabs
-Trabajos de laboratorios @Fernando Chandia.
+Trabajos de laboratorios de EDD @Fernando Chandia Sec 1.
