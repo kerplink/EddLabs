@@ -119,9 +119,10 @@ public class ArbolDirectorio{
         for(int i=0;i<ir(pathPadre).hijos.size();i++){
             if (ir(pathPadre).hijos.get(i).equals(ir(path))){
                 ir(pathPadre).hijos.remove(i);
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public void print() {
