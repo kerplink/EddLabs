@@ -164,10 +164,10 @@ public class Sorting {
         /*Imprimir la tabla. En la hoja aparece que para conseguir el tiempo en ms se debe dividir por 1000 pero al
         googlear aparece que es en realidad 10^6, asi que use una funcion de java para calcular los ms.
          */
-        System.out.println("-----------------------------------------------------------------------------");
-        System.out.printf("%10s %20s %20s %20s", "Tamanio", "BubbleSort", "MergeSort", "JavaSort");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
+        System.out.printf("%10s %30s %30s %30s", "Tamanio", "BubbleSort", "MergeSort", "JavaSort");
         System.out.println();
-        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
         for (int i = 0; i < 9; i++) {
             switch (i) {
                 case 0:
@@ -199,14 +199,14 @@ public class Sorting {
                     break;
             }
             for (int j = 0; j < 3; j++) {
-                if(j==0){
-                    System.out.printf("%25s", TimeUnit.NANOSECONDS.toMillis(p[i][j])+" ms");
+                if(j==0 && i>=4){
+                    System.out.printf("%31s", "N/A");
                 }else{
-                    System.out.printf("%20s",TimeUnit.NANOSECONDS.toMillis(p[i][j])+" ms");
+                    System.out.printf("%31s",p[i][j]+" ns/"+TimeUnit.NANOSECONDS.toMillis(p[i][j])+" ms");
                 }
             }
             System.out.println();
         }
-        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
     }
 }
