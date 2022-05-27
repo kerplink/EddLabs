@@ -102,7 +102,7 @@ public class Sorting {
         System.out.println();
     }
     /*Para evitar escribir lo mismo varias veces implementé esta funcion donde data es la matriz donde se guardan
-    los datos, datos son la cantidad de datos a evaluar y c es la fila donde iran los datos en la matriz.
+    los datos, datos son la cantidad a evaluar y c es la fila donde iran los datos en la matriz.
      */
     public static void calcularT(long[][] data, int datos, int c) {
         int[] arr1 = fillArray(datos);
