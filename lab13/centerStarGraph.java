@@ -6,7 +6,7 @@ class centerStarGraph {
         -1 <= ui, vi <= n
         -ui != vi
         -The given edges represent a valid star graph.
-    Creé dos arreglos distintos, y luego comparé sus valores para ver que número persistía.
+    Creé dos arreglos tomando dos filas distintas y luego comparé sus valores para ver que número persistía.
      */
     public int findCenter(int[][] edges) {
         int [] a1 = edges[0];
