@@ -8,7 +8,7 @@ class Solution {
     public int findCircleNum(int[][] isConnected) {
         //Se guarda la cantidad de nodos en una variable.
         int n=isConnected.length;
-        //Se crea un arregglo de tipo boolean (de tamaño n)  que marca los nodos visitados.
+        //Se crea un arreglo de tipo boolean (de tamaño n)  que marca los nodos visitados.
         boolean visited[]=new boolean[n];
         //Variable auxiliar que representa las provincias conectadas.
         int count=0;
